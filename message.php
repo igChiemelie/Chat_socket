@@ -209,9 +209,13 @@
     <script src="assets/js/instance.js"></script>
 
     <script>
-        function pageScroll() {
+        // function pageScroll() {
             
-            window.scrollBy(0, 150);
+        //     window.scrollBy(0, 150);
+        // }
+
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 200);
         }
 
         socket.on('updateUserStatus', (data) => { 
