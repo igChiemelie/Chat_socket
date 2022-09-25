@@ -32,13 +32,14 @@ if(isset($_POST['reg'])){//register
 
     if ($inserted) {
         //LOGIN SECTION
-        session_start();//start seesion
+        // session_start();//start seesion
 
         $userId = $link->insert_id;
         // $_SESSION["id"] = $userId;
         $_SESSION["loggedIn"] = true;
         $_SESSION["userId"] = $userId;
         $_SESSION["username"] = $username;
+
         // $_SESSION["email"] = $email;
 
         echo 200;
