@@ -1,36 +1,15 @@
 
-    $('.popover-open').click(function(e){
-        // e.preventDefault();
-        alert('ddd');
-        // $(this).append(
-        //     '<div style="position: relative;top: 1.2rem;right: 1.6rem;">\
-        //         <a class="logout" href="#!" style="color:white;text-decoration: underline;">\
-        //             Logout\
-        //         </a>\
-        //     </div>'
-        // );
-            // <div style="position: relative;top: 1.2rem;right: 1.6rem;">
-            //     <a class="logout" href="#!" style="color:white;text-decoration: underline;">
-            //         Logout
-            //     </a>
-            // </div>
-            // $('#toLogin').on('click', (e)=> {
-            //     e.preventDefault();
-            
-            //     $('.reg-div').addClass('hide');
-            //     $('.login-div').removeClass('hide');
-            // });
-            
-            // $('.showLogout').removeClass('hide');
-            console.log($('.showLogout'));
-            $('.showLogout').removeClass('hide');
-
+    $('.popover-open').on('click', function(e){
+        e.preventDefault();
+        if(confirm('Logout ?')){
+            window.location.href = './logout.php';
+        }else{
+            // alert('Request aborted!!');
+        }
     });
 
 
     // kiss no flog by lucky dube
-
-
 
     ///create instance
     appURL = "http://localhost:4000";
