@@ -9,7 +9,7 @@
     "start_chatApp": "nodemon index.js",
     "devStart": "nodemon MAIN.js",
     "igCode": "nodemon server.js",
-    "igStart": "nodemon start.js"
+    "igStart": "nodemon start...js"
   },
   "author": "I.G Chiemelie",
   "license": "ISC",
